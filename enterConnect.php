@@ -28,11 +28,13 @@ show_length,user_rating,notes)
     '$show_length','$user_rating','$notes')";
 
 if ($conn->query($sql) === TRUE) {
-    echo '<div class=center><br><br><br>
+    echo '<div class=center>
+    <br><br><br>
     <div class="container signin">
     <br>
     <h1>Database updated!</h1>
-    </div></div>';
+    </div>
+    </div>';
 }
     else {
         echo "Error: ".$sql."<br>".$conn->error;
