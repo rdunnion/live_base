@@ -1,3 +1,5 @@
+    <!-- This is the Welcome page after you login, provides password change or logout. -->
+    
     <!--- includes contents of file header.html --->
     <?php include "header.html" ?>
 
