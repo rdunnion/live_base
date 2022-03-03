@@ -23,7 +23,7 @@
     <p>Already have an account? <a href="login.php">Sign in</a>.</p>
     </div>
   </div>
-</form> -->
+</form> --> 
 
     <?php
     // Include config file
