@@ -1,4 +1,3 @@
-
 /* Center Item*/
 .center {
   display: block;
@@ -15,57 +14,60 @@
   text-align: right;
 }
 
-  /* Item Left */
-  .left {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-  }
+/* Item Left */
+.left {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
 
-  .header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background: #6495ED	;
-    color: white;
-    font-size: 30px;
-  }
+.header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: #6495ED;
+  color: white;
+  font-size: 30px;
+}
 
-  body {
-    background-color: #DDE3FD;
-    }
+body {
+  background-color: #DDE3FD;
+}
 
-  .material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-  
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-  }
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 
-  
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
 /* Styles for registration page*/
 
-  * {box-sizing: border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Add padding to containers */
 .container {
@@ -106,7 +108,7 @@ hr {
 }
 
 .registerbtn:hover {
-  opacity:1;
+  opacity: 1;
 }
 
 /* Add a blue text color to links */

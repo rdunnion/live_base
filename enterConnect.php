@@ -18,8 +18,8 @@ $db = "live_base";
 
 $conn = new mysqli($servername, $MySQLusername, $password, $db);
 
-if ($conn->connect_error){
-    die("Connection failed: ". $conn->connect_error);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 
 $sql = "insert into users(username,band_name,show_venue,show_date,recording_format,
@@ -35,10 +35,9 @@ if ($conn->query($sql) === TRUE) {
     <h1>Database updated!</h1>
     </div>
     </div>';
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
 }
-    else {
-        echo "Error: ".$sql."<br>".$conn->error;
-    }
 $conn->close();
 ?>
 

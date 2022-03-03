@@ -92,7 +92,7 @@
             }
         </style>
     </head>
- 
+
     <body>
         <div class="wrapper">
             <h2>Reset Password</h2>

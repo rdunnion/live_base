@@ -4,29 +4,31 @@
     <!-- <div class="body d-flex flex-column">
         <br><br><br>-->
 
-  <!-- Enter Show Form -->
+    <!-- Enter Show Form -->
     <div class="wrapper left form-group">
-        <head>
-          <meta charset="UTF-8">
-          <title>Login</title>
-          <style>
-            body {
-              font: 14px sans-serif;
-              color: white;
-            }
 
-            .wrapper {
-              width: 360px;
-              padding: 20px;
-            }
-          </style>
-        </head>
-        <body>
+      <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <style>
+          body {
+            font: 14px sans-serif;
+            color: white;
+          }
+
+          .wrapper {
+            width: 360px;
+            padding: 20px;
+          }
+        </style>
+      </head>
+
+      <body>
         <div class="wrapper">
-            <h2>Enter Show</h2>
-            <p>Please enter the show information.</p>
+          <h2>Enter Show</h2>
+          <p>Please enter the show information.</p>
 
-        <form action="enterConnect.php" method="post"><br>
+          <form action="enterConnect.php" method="post"><br>
             <input type="text" class="form-control" id="username" name="username" placeholder="Username"><br>
             <input type="text" class="form-control" id="band_name" name="band_name" placeholder="Band Name" size="50"><br>
             <input type="text" class="form-control" id="show_venue" name="show_venue" placeholder="Show Venue"><br>
@@ -36,9 +38,9 @@
             <input type="text" class="form-control" id="user_rating" name="user_rating" placeholder="User 5-star Rating *****"><br>
             <input type="text" class="form-control" id="notes" name="notes" placeholder="Notes"><br><br>
             <input type="submit" class="form-control" value="submit">
-      </form>
-</body>
+          </form>
+      </body>
     </div>
-</div>
+    </div>
     <!--- includes contents of file footer.html --->
     <?php include "footer.html" ?>
