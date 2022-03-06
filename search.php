@@ -1,7 +1,13 @@
-    <!--- includes contents of file header.html --->
+<!--- includes contents of file header.html --->
     <?php include "header.html" ?>
-
-    <!-- Search Bar -->
+<?php
+session_start();
+if (!isset($_SESSION["loggedin"]) === TRUE) {
+  header("location: login.php");
+  exit;
+}
+?>
+ <!-- Search Bar -->
     <div class="wrapper">
       <div class="container">
         <div class="panel panel-default">
@@ -23,7 +29,6 @@
               </style>
             </head>
 
-            <body>
               <div class="wrapper">
                 <h2>Search Shows</h2>
                 <p>Please enter a item to search for.</p>
@@ -35,7 +40,6 @@
                   </form>
                 </div>
               </div>
-            </body>
 
             <!--- includes contents of file footer.html --->
             <?php include "footer.html" ?>

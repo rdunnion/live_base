@@ -1,8 +1,13 @@
     <!--- includes contents of file header.html --->
     <?php include "header.html" ?>
 
-    <!-- <div class="body d-flex flex-column">
-        <br><br><br>-->
+    <?php
+    session_start();
+    if (!isset($_SESSION["loggedin"]) === TRUE) {
+      header("location: login.php");
+      exit;
+    }
+    ?>
 
     <!-- Enter Show Form -->
     <div class="wrapper left form-group">
