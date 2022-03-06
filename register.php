@@ -1,15 +1,6 @@
     <!--- includes contents of file header.html --->
     <?php include "header.html" ?>
 
-    <!-- Restricts access until user is logged in -->
-    <?php
-    session_start();
-    if (!isset($_SESSION["loggedin"]) === TRUE) {
-        header("location: login.php");
-        exit;
-    }
-    ?>
-
     <?php
     // Include config file
     require_once "config.php";
