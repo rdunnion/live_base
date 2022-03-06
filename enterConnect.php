@@ -1,6 +1,15 @@
 <!--- includes contents of file header.html --->
 <?php include "header.html" ?>
 
+<!-- Restricts access until user is logged in -->
+<?php
+session_start();
+if (!isset($_SESSION["loggedin"]) === TRUE) {
+  header("location: login.php");
+  exit;
+}
+?>
+
 <?php
 $username = $_POST['username'];
 $band_name = $_POST['band_name'];
@@ -30,7 +39,7 @@ show_length,user_rating,notes)
 if ($conn->query($sql) === TRUE) {
     echo '<div class=center>
     <br><br><br>
-    <div class="container signin">
+    <div class="container signin form-control">
     <br>
     <h1>Database updated!</h1>
     </div>

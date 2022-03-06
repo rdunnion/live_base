@@ -1,6 +1,7 @@
     <!--- includes contents of file header.html --->
     <?php include "header.html" ?>
 
+    <!-- Restricts access untill user is logged in -->
     <?php
     session_start();
     if (!isset($_SESSION["loggedin"]) === TRUE) {

@@ -1,14 +1,12 @@
     <!-- This is the Welcome page after you login, provides password change or logout. -->
-    
+
     <!--- includes contents of file header.html --->
     <?php include "header.html" ?>
 
+    <!-- Restricts access until user is logged in -->
     <?php
-    // Initialize the session
     session_start();
-
-    // Check if the user is logged in, if not then redirect him to login page
-    if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    if (!isset($_SESSION["loggedin"]) === TRUE) {
         header("location: login.php");
         exit;
     }
@@ -33,7 +31,7 @@
     <body>
         <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to LiveBase.</h1>
         <p>
-            <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+            <a href="reset_password.php" class="btn btn-warning">Reset Your Password</a>
             <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
         </p>
     </body>

@@ -1,12 +1,10 @@
     <!--- includes contents of file header.html --->
     <?php include "header.html" ?>
 
+    <!-- Restricts access until user is logged in -->
     <?php
-    // Initialize the session
     session_start();
-
-    // Check if the user is logged in, otherwise redirect to login page
-    if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    if (!isset($_SESSION["loggedin"]) === TRUE) {
         header("location: login.php");
         exit;
     }
@@ -43,7 +41,7 @@
         // Check input errors before updating the database
         if (empty($new_password_err) && empty($confirm_password_err)) {
             // Prepare an update statement
-            $sql = "UPDATE users SET password = ? WHERE id = ?";
+            $sql = "UPDATE reg SET password = ? WHERE id = ?";
 
             if ($stmt = mysqli_prepare($link, $sql)) {
                 // Bind variables to the prepared statement as parameters
