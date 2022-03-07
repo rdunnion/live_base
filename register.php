@@ -98,9 +98,7 @@
     }
     ?>
 
-    <!DOCTYPE html>
-    <html lang="en">
-
+    <!-- HTML portion -->
     <div class="wrapper">
         <div class="container">
             <div class="panel panel-default">
