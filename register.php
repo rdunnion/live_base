@@ -153,7 +153,5 @@
         </div>
     </div>
 
-    </html>
-
     <!--- includes contents of file footer.html --->
     <?php include "footer.html" ?>

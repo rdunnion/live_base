@@ -8,10 +8,11 @@
       header("location: login.php");
       exit;
     }
+    
     ?>
 
     <!-- Enter Show Form -->
-    <div class="wrapper left form-group">
+    <div class="wrapper center form-group">
 
       <head>
         <meta charset="UTF-8">

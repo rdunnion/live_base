@@ -11,6 +11,8 @@ if (!isset($_SESSION["loggedin"]) === TRUE) {
 ?>
 
 <?php
+require_once "config.php";
+
 $username = $_POST['username'];
 $band_name = $_POST['band_name'];
 $show_venue = $_POST['show_venue'];
@@ -19,11 +21,6 @@ $recording_format = $_POST['recording_format'];
 $show_length = $_POST['show_length'];
 $user_rating = $_POST['user_rating'];
 $notes = $_POST['notes'];
-
-$servername = "localhost";
-$MySQLusername = "PHP";
-$password = "Password01";
-$db = "live_base";
 
 $conn = new mysqli($servername, $MySQLusername, $password, $db);
 
