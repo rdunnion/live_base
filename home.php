@@ -20,7 +20,7 @@
                 and is currently working as a Datacenter Technician for a managed services company based<br>
                 out of Silicon Valley.
             </p>
-            </div>
+        </div>
     </div>
 
     <!--- includes contents of file footer.html --->

@@ -3,7 +3,7 @@
 
 <?php
 // Initialize the session
-session_start(); 
+session_start();
 
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if (isset($_SESSION["loggedin"])) {
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Prepare a select statement
     $sql = "SELECT id, username, password FROM reg WHERE username = ?";
 
-    if ($stmt = mysqli_prepare($link, $sql)) {
+    if ($stmt = mysqli_prepare($conn, $sql)) {
       // Bind variables to the prepared statement as parameters
       mysqli_stmt_bind_param($stmt, "s", $param_username);
 
@@ -96,50 +96,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="panel panel-default">
       <div class="panel-body">
 
-        <head>
-          <meta charset="UTF-8">
-          <title>Login</title>
-          <style>
-            body {
-              font: 14px sans-serif;
-              color: white;
-            }
+        <title>Login</title>
+        <h2>Login</h2>
+        <p>Please fill in your credentials to login.</p>
 
-            .wrapper {
-              width: 360px;
-              padding: 20px;
-            }
-          </style>
-        </head>
+        <?php
+        if (!empty($login_err)) {
+          echo '<div class="alert alert-danger">' . $login_err . '</div>';
+        }
+        ?>
 
-        <body>
-          <div class="wrapper">
-            <h2>Login</h2>
-            <p>Please fill in your credentials to login.</p>
-
-            <?php
-            if (!empty($login_err)) {
-              echo '<div class="alert alert-danger">' . $login_err . '</div>';
-            }
-            ?>
-
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-              <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-                <span class="invalid-feedback"><?php echo $username_err; ?></span>
-              </div>
-              <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
-                <span class="invalid-feedback"><?php echo $password_err; ?></span>
-              </div>
-              <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
-              </div>
-              <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-            </form>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+          <div class="form-group">
+            <label>Username</label>
+            <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+            <span class="invalid-feedback"><?php echo $username_err; ?></span>
           </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+            <span class="invalid-feedback"><?php echo $password_err; ?></span>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Login">
+          </div>
+          <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+        </form>
       </div>
     </div>
   </div>

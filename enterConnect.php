@@ -5,12 +5,10 @@
 <?php
 session_start();
 if (!isset($_SESSION["loggedin"]) === TRUE) {
-  header("location: login.php");
-  exit;
+    header("location: login.php");
+    exit;
 }
-?>
 
-<?php
 require_once "config.php";
 
 $username = $_POST['username'];

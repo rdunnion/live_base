@@ -1,3 +1,20 @@
+/* sets font and font color */
+body {
+  font: 14px sans-serif;
+  color: white;
+}
+
+/* sets padding */
+.wrapper {
+  width: 360px;
+  padding: 20px;
+}
+
+/*padding on left */
+.padding-left {
+  padding-left: 80px;
+}
+
 /* Center Item*/
 .center {
   display: block;
@@ -30,10 +47,6 @@
   background: #6495ED;
   color: white;
   font-size: 30px;
-}
-
-body {
-  background-color: #DDE3FD;
 }
 
 .material-icons {
