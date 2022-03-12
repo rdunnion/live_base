@@ -1,3 +1,4 @@
+
 /* sets font and font color */
 body {
   font: 14px sans-serif;
@@ -17,7 +18,7 @@ body {
 
 /* Center Item*/
 .center {
-  display: block;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -47,6 +48,36 @@ body {
   background: #6495ED;
   color: white;
   font-size: 30px;
+}
+
+.box {
+  width: 700px;
+  border: 15px solid white;
+  padding: auto;
+  margin: 20px;
+  background: #6495ED;
+  border-radius: 25px;
+  height: auto;
+}
+
+.box_enter {
+  width: 425;
+  border: 15px solid white;
+  padding: auto;
+  margin: 20px;
+  background: #6495ED;
+  border-radius: 25px;
+  height: auto;
+}
+
+.box_search {
+  width: 700px;
+  border: 15px solid white;
+  padding: auto;
+  margin: 20px;
+  background: #6495ED;
+  border-radius: 25px;
+  height: auto;
 }
 
 .material-icons {

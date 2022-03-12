@@ -11,9 +11,8 @@
     ?>
 
     <!-- Enter Show HTML Form -->
-    <div class="wrapper form-group">
-      <title>Login</title>
-      <div class="wrapper">
+
+      <div class="wrapper box_enter center">
         <h2>Enter Show</h2>
         <p>Please enter the show information.</p>
 
@@ -26,9 +25,10 @@
           <input type="text" class="form-control" id="show_length" name="show_length" placeholder="Show Length min:sec"><br>
           <input type="text" class="form-control" id="user_rating" name="user_rating" placeholder="User 5-star Rating *****"><br>
           <input type="text" class="form-control" id="notes" name="notes" placeholder="Notes"><br><br>
-          <input type="submit" class="form-control form-control btn btn-primary ml-2" value="submit">
+          <input type="submit" class="form-control btn btn-primary ml-2" value="submit">
         </form>
-      </div>
+
     </div>
+
     <!--- includes contents of file footer.html --->
     <?php include "footer.html" ?>

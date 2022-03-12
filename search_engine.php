@@ -10,7 +10,7 @@ if (!isset($_SESSION["loggedin"]) === TRUE) {
 }
 ?>
 <!-- HTML portion -->
-<div class="wrapper form-group">
+<div class="wrapper form-group box center">
 	<div class="container">
 		<div class="panel panel-default">
 			<div class="panel-body">
@@ -45,15 +45,6 @@ if (isset($_GET['k']) && $_GET['k'] != '') {
 		OR notes LIKE '%$k%'";
 	$display_words = "$k";
 
-	// format each of search keywords into the db query to be run
-	/*$keywords = explode(' ', $k);
-
-	foreach ($keywords as $word) {
-		$search_string .= "keywords LIKE '%" . $word . "%' OR ";
-		$display_words .= $word . " ";
-	}
-	$search_string = substr($search_string, 0, strlen($search_string) - 3);*/
-
 	// query the database and count rows
 	$query = mysqli_query($conn, $search_string);
 	$result_count = mysqli_num_rows($query);
@@ -61,24 +52,24 @@ if (isset($_GET['k']) && $_GET['k'] != '') {
 	// check to see if any results are found
 	if ($result_count != 0) {
 		// display search result count to user
-		echo '<br><div class="left padding-left"><u>' . $result_count . '</u> results found.</div><br>';
-		echo '<div class="left padding-left">Your search results for <i>' . $display_words . '</i></div><hr /><br>';
-
-		echo '<table>';
+		echo '<br><div><u>' . $result_count . '</u> results found.</div><br>';
+		echo '<div>Your search results for <i>' . $display_words . '</i></div><hr /><br>';
 
 		// display all the search results to the user
 		while ($row = mysqli_fetch_assoc($query)) {
 			echo '
+			<div class="box_search center">
 			<tr>
-					<tr><td><div class="left padding-left">Username: ' . $row['username'] . '</div></td></tr>
-					<tr><td><div class="left padding-left">Band Name: ' . $row['band_name'] . '</div></td></tr>
-					<tr><td><div class="left padding-left">Show Venue: ' . $row['show_venue'] . '</div></td></tr>
-					<tr><td><div class="left padding-left">Show Date: ' . $row['show_date'] . '</div></td></tr>
-					<tr><td><div class="left padding-left">Recording Format: ' . $row['recording_format'] . '</div></td></tr>
-					<tr><td><div class="left padding-left">Show Length: ' . $row['user_rating'] . '</div></td></tr>
-					<tr><td><div class="left padding-left">Notes: ' . $row['notes'] . '</div></td></tr>
+					<br><tr><td><div>Username: ' . $row['username'] . '</div></td></tr>
+					<tr><td><div>Band Name: ' . $row['band_name'] . '</div></td></tr>
+					<tr><td><div>Show Venue: ' . $row['show_venue'] . '</div></td></tr>
+					<tr><td><div>Show Date: ' . $row['show_date'] . '</div></td></tr>
+					<tr><td><div>Recording Format: ' . $row['recording_format'] . '</div></td></tr>
+					<tr><td><div>Show Length: ' . $row['user_rating'] . '</div></td></tr>
+					<tr><td><div>Notes: ' . $row['notes'] . '</div></td></tr>
 					<tr><td><br></td></tr>
 				</tr>
+				</div>
 				</div>';
 		}
 		echo '</table>';
