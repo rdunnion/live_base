@@ -16,7 +16,7 @@
         <h2>Enter Show</h2>
         <p>Please enter the show information.</p>
 
-        <form action="enterConnect.php" method="post"><br>
+        <form action="enterConnect.php" method="post">
           <input type="text" class="form-control" id="username" name="username" placeholder="Username"><br>
           <input type="text" class="form-control" id="band_name" name="band_name" placeholder="Band Name"><br>
           <input type="text" class="form-control" id="show_venue" name="show_venue" placeholder="Show Venue"><br>

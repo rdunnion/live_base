@@ -73,10 +73,10 @@
 
     <title>Reset Password</title>
 
-    <div class="wrapper">
+    <div class="wrapper box center">
         <div class="container">
             <div class="panel panel-default">
-                <div class="panel-body">
+                <div class="panel-body center">
                     <h2>Reset Password</h2>
                     <p>Please fill out this form to reset your password.</p>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
