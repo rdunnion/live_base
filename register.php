@@ -99,7 +99,7 @@
     ?>
 
     <!-- HTML portion -->
-    <div class="wrapper">
+    <div class="wrapper box center">
         <div class="container">
             <div class="panel panel-default">
                 <div class="panel-body">

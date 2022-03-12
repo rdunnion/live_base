@@ -1,4 +1,3 @@
-
 /* sets font and font color */
 body {
   font: 14px sans-serif;
@@ -14,6 +13,10 @@ body {
 /*padding on left */
 .padding-left {
   padding-left: 80px;
+}
+
+.red {
+  color: red;
 }
 
 /* Center Item*/
