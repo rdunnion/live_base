@@ -90,6 +90,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   mysqli_close($link);
 }
 ?>
+<!-- HTML section -->
+<title>Live Base: Login</title>
 
 <div class="wrapper box center">
   <div class="container">
@@ -119,8 +121,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           </div>
           <div class="form-group">
             <input type="submit" class="btn btn-primary" value="Login">
-          </div>
-          <p>Don't have an account? <a href="register.php"><a class="red">Sign up now.</a></a></p>
+          </div><br>
+          <p>Don't have an account? <a class="darkblue" href="register.php">Sign up now.</a></p>
         </form>
       </div>
     </div>

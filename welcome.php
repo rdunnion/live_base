@@ -12,6 +12,7 @@
     }
     ?>
     <!-- Welome page HTML section -->
+    <title>Live Base: Welcome</title>
 
     <div class="center box">
         <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to LiveBase.</h1>

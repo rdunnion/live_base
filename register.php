@@ -99,6 +99,7 @@
     ?>
 
     <!-- HTML portion -->
+    <title>Live Base: Register</title>
     <div class="wrapper box center">
         <div class="container">
             <div class="panel panel-default">
@@ -127,8 +128,8 @@
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary" value="Submit">
                             <input type="reset" class="btn btn-secondary ml-2" value="Reset">
-                        </div>
-                        <p>Already have an account? <a href="login.php">Login here</a>.</p>
+                        </div><br>
+                        <p>Already have an account? <a class="darkblue" href="login.php">Login here</a>.</p>
                     </form>
                 </div>
             </div>

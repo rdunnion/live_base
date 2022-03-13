@@ -10,6 +10,8 @@ if (!isset($_SESSION["loggedin"]) === TRUE) {
 }
 ?>
 <!-- HTML portion -->
+<title>Live Base: Search</title>
+
 <div class="wrapper form-group box center">
 	<div class="container">
 		<div class="panel panel-default">
@@ -52,13 +54,13 @@ if (isset($_GET['k']) && $_GET['k'] != '') {
 	// check to see if any results are found
 	if ($result_count != 0) {
 		// display search result count to user
-		echo '<br><div><u>' . $result_count . '</u> results found.</div><br>';
-		echo '<div>Your search results for <i>' . $display_words . '</i></div><hr /><br>';
+		echo '<br><div class="box center"><u><br>' . $result_count . '</u> results found.<br><br>';
+		echo 'Your search results for <i>' . $display_words . '</i><br><br></div><hr />';
 
 		// display all the search results to the user
 		while ($row = mysqli_fetch_assoc($query)) {
 			echo '
-			<div class="box_search center">
+			<div class="box center">
 			<tr>
 					<br><tr><td><div>Username: ' . $row['username'] . '</div></td></tr>
 					<tr><td><div>Band Name: ' . $row['band_name'] . '</div></td></tr>
@@ -74,7 +76,7 @@ if (isset($_GET['k']) && $_GET['k'] != '') {
 		}
 		echo '</table>';
 	} else
-		echo '<tr><td>No results found. Please search something else.</td></tr>';
+		echo '<br><br><tr><td>No results found. Please search something else.</td></tr>';
 }
 
 ?>

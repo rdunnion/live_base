@@ -32,12 +32,10 @@ show_length,user_rating,notes)
     '$show_length','$user_rating','$notes')";
 
 if ($conn->query($sql) === TRUE) {
-    echo '<div class=center>
-    <br><br><br>
-    <div class="container signin form-control">
-    <br>
+    echo '<div class="box center">
+    <div><br><br>
     <h1>Database updated!</h1>
-    </div>
+    </div><br><br>
     </div>';
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
@@ -45,5 +43,6 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 ?>
 
+<title>Live Base: Updated</title>
 <!--- includes contents of file footer.html --->
 <?php include "footer.html" ?>

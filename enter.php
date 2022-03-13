@@ -11,7 +11,7 @@
     ?>
 
     <!-- Enter Show HTML Form -->
-
+      <title>Live Base: Enter Show</title>
       <div class="wrapper box_enter center">
         <h2>Enter Show</h2>
         <p>Please enter the show information.</p>

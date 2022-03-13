@@ -15,8 +15,8 @@ body {
   padding-left: 80px;
 }
 
-.red {
-  color: red;
+.darkblue {
+  color: darkblue;
 }
 
 /* Center Item*/
@@ -54,9 +54,9 @@ body {
 }
 
 .box {
-  width: 700px;
-  border: 15px solid white;
-  padding: auto;
+  width: auto;
+  border: 7px solid white;
+  padding: 15px;
   margin: 20px;
   background: #6495ED;
   border-radius: 25px;
@@ -65,17 +65,7 @@ body {
 
 .box_enter {
   width: 425;
-  border: 15px solid white;
-  padding: auto;
-  margin: 20px;
-  background: #6495ED;
-  border-radius: 25px;
-  height: auto;
-}
-
-.box_search {
-  width: 700px;
-  border: 15px solid white;
+  border: 7px solid white;
   padding: auto;
   margin: 20px;
   background: #6495ED;

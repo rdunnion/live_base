@@ -71,7 +71,7 @@
     }
     ?>
 
-    <title>Reset Password</title>
+    <title>Live Base: Reset Password</title>
 
     <div class="wrapper box center">
         <div class="container">
