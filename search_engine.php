@@ -34,6 +34,10 @@ if (isset($_GET['k']) && $_GET['k'] != '') {
 
 	$k = trim($_GET['k']);
 
+	// PHP to prevent SQL injection
+	$k = stripslashes($k);
+	$k = mysqli_real_escape_string($conn, $k);
+
 	// define the search query
 	$search_string =
 		"SELECT * FROM users 

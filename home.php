@@ -5,7 +5,6 @@
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12 center">
             <img src="LiveBaseLogo-sm.png" class="img-fluid">
-            <br>
         </div>
         <div class="row center">
             <div class="col-lg-8 col-md-8 col-sm-12 desc enter_font box center"><br>
