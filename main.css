@@ -10,16 +10,17 @@ body {
   padding: 20px;
 }
 
-/*padding on left */
+/* padding on left */
 .padding-left {
   padding-left: 80px;
 }
 
+/* Color style */
 .darkblue {
   color: darkblue;
 }
 
-/* Center Item*/
+/* Center Item */
 .center {
   display: inline-block;
   margin-left: auto;
@@ -43,6 +44,7 @@ body {
   text-align: left;
 }
 
+/* header style */
 .header {
   display: block;
   margin-left: auto;
@@ -71,7 +73,7 @@ body {
   background: #6495ED;
   border-radius: 25px;
   height: auto;
-}*/
+}
 
 .material-icons {
   font-family: 'Material Icons';
@@ -86,21 +88,17 @@ body {
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
-
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
-
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
-
 /* Styles for registration page*/
-* {
+/** {
   box-sizing: border-box
 }
 
