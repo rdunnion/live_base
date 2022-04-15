@@ -71,7 +71,7 @@ body {
   background: #6495ED;
   border-radius: 25px;
   height: auto;
-}
+}*/
 
 .material-icons {
   font-family: 'Material Icons';
@@ -99,9 +99,7 @@ body {
   font-feature-settings: 'liga';
 }
 
-
 /* Styles for registration page*/
-
 * {
   box-sizing: border-box
 }
@@ -142,7 +140,7 @@ hr {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
-}
+} 
 
 .registerbtn:hover {
   opacity: 1;

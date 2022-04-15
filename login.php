@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           if (mysqli_stmt_fetch($stmt)) {
             if (password_verify($password, $hashed_password)) {
               // Password is correct, so start a new session
-              session_start();
+              //session_start();
 
               // Store data in session variables
               $_SESSION["loggedin"] = true;
@@ -76,12 +76,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
           // Username doesn't exist, display a generic error message
           $login_err = "Invalid username or password.";
+              
         }
       } else {
         echo "Oops! Something went wrong. Please try again later.";
       }
-
-      // Close statement
+       // Close statement
       mysqli_stmt_close($stmt);
     }
   }
