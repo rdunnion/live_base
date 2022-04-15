@@ -97,6 +97,7 @@ body {
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
 /* Styles for registration page*/
 /** {
   box-sizing: border-box
@@ -138,7 +139,7 @@ hr {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
-} 
+}
 
 .registerbtn:hover {
   opacity: 1;
