@@ -29,8 +29,6 @@
         </form>
 
     </div>
-   <?php  mysqli_close($conn); ?>
     
-
     <!--- includes contents of file footer.html --->
     <?php include "footer.html" ?>
