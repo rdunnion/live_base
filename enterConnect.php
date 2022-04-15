@@ -34,13 +34,13 @@ show_length,user_rating,notes)
 if ($conn->query($sql) === TRUE) {
     echo '<div class="box center">
     <div><br><br>
-    <h1>Database updated!</h1>
+    <h2>Database updated!</h2>
     </div><br><br>
     </div>';
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
-$conn->close();
+mysqli_close($conn);
 ?>
 
 <title>Live Base: Updated</title>
