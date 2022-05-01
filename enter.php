@@ -25,7 +25,7 @@
         <input type="text" class="form-control" id="show_length" name="show_length" placeholder="Show Length min:sec"><br>
         <input type="text" class="form-control" id="user_rating" name="user_rating" placeholder="User 5-star Rating *****"><br>
         <input type="text" class="form-control" id="notes" name="notes" placeholder="Notes"><br><br>
-        <input type="submit" class="form-control btn btn-primary ml-2" value="submit">
+        <input type="submit" class="form-control btn btn-primary ml-2" value="Submit">
       </form>
 
     </div>
